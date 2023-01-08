@@ -32,7 +32,8 @@ Instructions on how to generate a random password:
 ## Credits 
 
 - Shoutout to Talon Meyer for recommending a if statement for the pwlength issue I was running into. Even though I didn't use a if statement in the end product, it got me to look for other statements to finally get it to work.
-- Shoutout to Harambe ( too soon =( )
+
+- Shoutout to Harambe ( too soon 😢 )
 
 
 
