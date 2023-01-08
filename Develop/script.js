@@ -1,4 +1,4 @@
-// Variable Bank 
+
 var generateBtn = document.querySelector("#generate");
 var pwLength = 8;
 var pwArr = []
@@ -29,7 +29,7 @@ function generatePassword(){
     
 }
  
-// Function that ask for parameters for password
+
 
 function npcdialog(){
  
@@ -40,7 +40,8 @@ function npcdialog(){
   // Sets the number of characters for the password, if the input isn't a number it does nothing. 
   
   pwLength = prompt(" length of password ? (8 - 128)");
- if (pwLength < 8 || pwLength > 128 || pwLength == nan) {
+ // This prevents the user from going past the initial prompt with an invalid number of characters.
+  while(pwLength < 8 || pwLength > 128 ) {
      pwLength = prompt("please enter a numbers between 8-128 ");
   } 
     
@@ -51,13 +52,13 @@ function npcdialog(){
   if (confirm( "Are lowercase ok?")) {      
     pwArr = pwArr.concat(lower);
   } 
-  if (confirm( "Are uppercase ok?")) {     
+   if (confirm( "Are uppercase ok?")) {     
     pwArr = pwArr.concat(upper);
   } 
-  if (confirm( "Are special characters ok?")) {  
+   if (confirm( "Are special characters ok?")) {  
     pwArr = pwArr.concat(spec);
   } 
-  if (confirm( "Are numbers ok?")) {
+   if (confirm( "Are numbers ok?")) {
     pwArr = pwArr.concat(num);
   } 
    
@@ -67,7 +68,6 @@ function npcdialog(){
   }
   
 
-// On button click , this event listener will run write password function.
 
 generateBtn.addEventListener("click", writePassword);
 
