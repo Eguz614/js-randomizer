@@ -4,7 +4,9 @@
 ## Description
 This password generator app utilizes Javascript's ability to gather information , process parameters, and generate a password from a bank of values stored in an array.  With the use of functions and methods , the process of generating a personalized password can be automated and and expanded upon. Comments are found throughout the javascript file to help collaborators indentify processes and their functionality. 
 
+## How to locate
 
+To access the js-randomizer for a functionality preview , follow the link to : https://eguz614.github.io/js-randomizer/.
 
 
 ## Usage
@@ -27,7 +29,10 @@ Instructions on how to generate a random password:
 4) once all parameters are set a personalized password will be generated and displayed as a read-only.
  
 
+## Credits 
+
+- Shoutout to Talon Meyer for recommending a if statement for the pwlength issue I was running into. Even though I didn't use a if statement in the end product, it got me to look for other statements to finally get it to work.
+- Shoutout to Harambe ( too soon =( )
 
 
-## License
-N/A
+
