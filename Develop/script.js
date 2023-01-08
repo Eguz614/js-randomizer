@@ -40,7 +40,12 @@ function npcdialog(){
   // Sets the number of characters for the password, if the input isn't a number it does nothing. 
   
   pwLength = prompt(" length of password ? (8 - 128)");
+ if (pwLength < 8 || pwLength > 128 || pwLength == nan) {
+     pwLength = prompt("please enter a numbers between 8-128 ");
+  } 
+    
   
+
   // These confirms will merge their content with the empty array "pwArr" when the user clicks ok .
   
   if (confirm( "Are lowercase ok?")) {      
